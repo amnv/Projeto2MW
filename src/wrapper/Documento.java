@@ -1,11 +1,10 @@
 package wrapper;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class Documento {
 
@@ -28,7 +27,7 @@ public class Documento {
 	}
 
 	private void loadFile() throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("src\\equipe4.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("equipe4.txt"));
 
 		while (br.ready()) {
 			linha = br.readLine();
@@ -66,14 +65,35 @@ public class Documento {
 			if (linhas[i].startsWith("Subjects:")) {
 				subjects = linhas[i].substring(10).trim();
 				System.out.println("Subjects: " +subjects);
+				criarCSV();
 			}
 		}
-	
+		
 	}
 	
-	public void criarCSV()
+	public void criarCSV() throws IOException
 	{
+		FileWriter fr = new FileWriter(new File("wrapper.csv"), true);
+		StringBuilder sb =  new StringBuilder();
+		sb.append("Author: ");
+		sb.append(";");
+		sb.append(this.autor);
+		sb.append("\n");
+		sb.append("Title: ");
+		sb.append(";");
+		sb.append(this.title);
+		sb.append("\n");
+		sb.append("Subjects: ");
+		sb.append(";");
+		sb.append(this.subjects);
+		sb.append("\n");
+		sb.append("Link: ");
+		sb.append(";");
+		sb.append(this.link);
+		sb.append("\n\n\n\n\n");
 		
+		fr.write(sb.toString());
+		fr.close();
 	}
 	
 }
