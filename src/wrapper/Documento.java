@@ -10,20 +10,22 @@ public class Documento {
 
 	private String linha;
 	private String doc;
-	private String coments;
+	private String comments;
 	private String link;
 	private String subjects;
 	private String autor;
 	private String title;
+	private String journalRef;
 
 	public Documento() {
 		this.linha = null;
 		this.doc = null;
-		this.coments = null;
+		this.comments = null;
 		this.link = null;
 		this.subjects = null;
 		this.autor = null;
 		this.title = null;
+		this.journalRef = null;
 	}
 
 	private void loadFile() throws IOException {
@@ -46,7 +48,8 @@ public class Documento {
 		for (int i = 0; i < linhas.length; i++) {
 			
 			if (linhas[i].startsWith("[") || isLink == true) {			
-					this.link = linhas[i++].substring(0).trim();
+					//this.link = linhas[i++].substring(5,22).trim();
+				this.link = linhas[i++].split(" ")[2];
 					System.out.println(link);
 					isLink = !isLink;
 					this.title = linhas[i++].substring(0).trim();
@@ -58,9 +61,15 @@ public class Documento {
 			}
 			
 			if (linhas[i].startsWith("Comments:")) {
-				coments = linhas[i].substring(10).trim();
-				System.out.println("Comentários: "+coments);
+				comments = linhas[i].substring(10).trim();
+				System.out.println("Comments: "+comments);
 			}
+
+            if (linhas[i].startsWith("Journal-ref:")) {
+                journalRef = linhas[i].substring(10).trim();
+                System.out.println("Journal-ref: "+journalRef);
+            }
+
 			
 			if (linhas[i].startsWith("Subjects:")) {
 				subjects = linhas[i].substring(10).trim();
@@ -73,23 +82,39 @@ public class Documento {
 	
 	public void criarCSV() throws IOException
 	{
-		FileWriter fr = new FileWriter(new File("wrapper.csv"), true);
+		FileWriter fr = new FileWriter(new File("template.csv"), true);
 		StringBuilder sb =  new StringBuilder();
-		sb.append("Author: ");
-		sb.append(";");
+		sb.append("Authors: ");
 		sb.append(this.autor);
+		sb.append(";");
 		sb.append("\n");
 		sb.append("Title: ");
-		sb.append(";");
 		sb.append(this.title);
+		sb.append(";");
 		sb.append("\n");
 		sb.append("Subjects: ");
-		sb.append(";");
 		sb.append(this.subjects);
+		sb.append(";");
+		sb.append("\n");
+		sb.append("Comments: ");
+		if(comments == null){
+			sb.append("NULL");
+		} else {
+			sb.append(this.comments);
+		}
+		sb.append(";");
+		sb.append("\n");
+		sb.append("Journal-ref: ");
+		if(journalRef == null){
+			sb.append("NULL");
+		} else {
+			sb.append(this.journalRef);
+		}
+		sb.append(";");
 		sb.append("\n");
 		sb.append("Link: ");
-		sb.append(";");
 		sb.append(this.link);
+		sb.append(";");
 		sb.append("\n\n\n\n\n");
 		
 		fr.write(sb.toString());
