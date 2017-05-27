@@ -2,16 +2,15 @@ package wrapper;
 
 public class Main {
 	public static void main(String[] args)  {
-		Documento doc = new Documento();
+		String arq = "texto.txt";
+		OpenIE ie = new OpenIE();
 		try 
 		{
-			doc.executa();
+			ie.extractRelations(arq);
 		}
 		catch (Exception e)
 		{
 			e.getMessage();
-		}
-		
+		}	
 	}
-
 }

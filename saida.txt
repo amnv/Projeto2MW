@@ -1,0 +1,118 @@
+1.0	property	be	investigate
+1.0	basic property	be	investigate
+1.0	tail-biting code	can	can regard as linear block code
+1.0	tail-biting code	can	can regard as block code
+1.0	convolutional code	can	can regard
+1.0	code	can	can regard as block code
+1.0	code	can	can regard
+1.0	tail-biting convolutional code	can	can regard as linear block code
+1.0	tail-biting convolutional code	can	can regard
+1.0	convolutional code	can	can regard as linear block code
+1.0	code	can	can regard as linear block code
+1.0	tail-biting convolutional code	can	can regard as block code
+1.0	tail-biting code	can	can regard
+1.0	convolutional code	can	can regard as block code
+1.0	basic property	be	obtain
+1.0	property	be	obtain
+1.0	we	next discuss	possibility of trellis reduction for tail-biting convolutional code
+1.0	we	discuss	possibility of trellis reduction for give convolutional code
+1.0	we	discuss	possibility of trellis reduction for tail-biting convolutional code
+1.0	we	discuss	possibility of trellis reduction
+1.0	we	discuss	possibility of trellis reduction for give tail-biting code
+1.0	we	discuss	possibility of trellis reduction for convolutional code
+1.0	we	next discuss	possibility of trellis reduction for give convolutional code
+1.0	we	next discuss	possibility of trellis reduction for code
+1.0	we	next discuss	possibility of trellis reduction for convolutional code
+1.0	we	use	derive result
+1.0	we	discuss	possibility of trellis reduction for give tail-biting convolutional code
+1.0	we	use	result
+1.0	we	discuss	possibility
+1.0	we	discuss	possibility of trellis reduction for tail-biting code
+1.0	we	next discuss	possibility of trellis reduction for give code
+1.0	we	next discuss	possibility of trellis reduction for give tail-biting convolutional code
+1.0	we	next discuss	possibility
+1.0	we	next discuss	possibility of trellis reduction for tail-biting code
+1.0	we	next discuss	possibility of trellis reduction for give tail-biting code
+1.0	we	discuss	possibility of trellis reduction for give code
+1.0	we	next discuss	possibility of trellis reduction
+1.0	we	discuss	possibility of trellis reduction for code
+1.0	we	can find	generator matrix gs equivalent
+1.0	we	can find	generator matrix gs equivalent to gt base on characteristic matrix
+1.0	we	can find	generator matrix gs equivalent base
+1.0	we	can find	scalar generator matrix gs equivalent to gt base on characteristic matrix
+1.0	we	can find	generator matrix gs equivalent base on matrix
+1.0	we	can find	generator matrix gs base on matrix
+1.0	we	can find	scalar generator matrix gs
+1.0	we	can find	scalar generator matrix gs equivalent to gt
+1.0	we	can find	generator matrix gs
+1.0	we	can find	scalar generator matrix gs equivalent base on matrix
+1.0	we	can find	scalar generator matrix gs equivalent
+1.0	we	can find	generator matrix gs equivalent to gt base on matrix
+1.0	we	can find	generator matrix gs base on characteristic matrix
+1.0	we	can find	scalar generator matrix gs equivalent to gt base on matrix
+1.0	we	can find	generator matrix gs base
+1.0	we	can find	scalar generator matrix gs base
+1.0	we	can find	generator matrix gs equivalent base on characteristic matrix
+1.0	we	can find	generator matrix gs equivalent to gt
+1.0	we	can find	scalar generator matrix gs base on matrix
+1.0	we	can find	scalar generator matrix gs equivalent base on characteristic matrix
+1.0	we	can find	generator matrix gs equivalent to gt base
+1.0	we	can find	scalar generator matrix gs equivalent to gt base
+1.0	we	can find	scalar generator matrix gs base on characteristic matrix
+1.0	we	can find	scalar generator matrix gs equivalent base
+1.0	generator matrix corresponding	have	have reduce
+1.0	polynomial generator matrix	have	have reduce
+1.0	polynomial generator matrix corresponding	have	have reduce
+1.0	trellis reduction	be	realize
+1.0	generator matrix	have	have reduce
+1.0	polynomial generator matrix corresponding	have factor in	case
+1.0	polynomial generator matrix corresponding	be	reduce
+1.0	polynomial generator matrix	be	reduce
+1.0	polynomial generator matrix	have factor in	many case
+1.0	generator matrix corresponding	have factor in	many case
+1.0	generator matrix	be	reduce
+1.0	polynomial generator matrix corresponding	have factor in	many case
+1.0	generator matrix	have factor in	case
+1.0	generator matrix corresponding	be	reduce
+1.0	generator matrix	have factor in	many case
+1.0	polynomial generator matrix	have factor in	case
+1.0	generator matrix corresponding	have factor in	case
+1.0	tail-biting path	be	regard
+1.0	tail-biting path	be regard as	code sequence
+1.0	path	be regard as	code sequence
+1.0	path	be	regard
+1.0	we	thus allow	partial shift of tail-biting path
+0.660723897439031	we	cyclic shift of	path
+1.0	we	allow	cyclic shift
+1.0	we	thus allow	cyclic shift of path
+0.660723897439031	we	cyclic shift of	tail-biting path
+1.0	we	allow	cyclic shift of tail-biting path
+0.660723897439031	we	shift of	tail-biting path
+1.0	we	allow	shift
+1.0	we	allow	partial shift of tail-biting path
+0.660723897439031	we	partial cyclic shift of	tail-biting path
+1.0	we	allow	partial cyclic shift
+1.0	we	thus allow	partial cyclic shift of tail-biting path
+1.0	we	thus allow	cyclic shift of tail-biting path
+1.0	we	allow	partial cyclic shift of path
+1.0	we	thus allow	cyclic shift
+0.14059619431790493	trellis reduction	be accomplish	thus we allow
+1.0	we	thus allow	shift of path
+1.0	we	thus allow	partial shift of path
+1.0	we	allow	shift of path
+1.0	we	allow	partial shift
+0.660723897439031	we	partial shift of	tail-biting path
+0.660723897439031	we	shift of	path
+1.0	we	thus allow	partial cyclic shift
+1.0	we	thus allow	partial shift
+0.660723897439031	we	partial cyclic shift of	path
+1.0	we	allow	partial cyclic shift of tail-biting path
+1.0	we	allow	shift of tail-biting path
+1.0	we	thus allow	partial cyclic shift of path
+1.0	we	thus allow	shift of tail-biting path
+0.660723897439031	we	partial shift of	path
+1.0	trellis reduction	be	accomplish
+0.14059619431790493	trellis reduction	be accomplish	we allow
+1.0	we	allow	partial shift of path
+1.0	we	allow	cyclic shift of path
+1.0	we	thus allow	shift
